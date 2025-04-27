@@ -135,3 +135,12 @@ body {
 
 
 
+.video-container {
+  margin-bottom: 2rem;
+}
+
+.video-container video {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}

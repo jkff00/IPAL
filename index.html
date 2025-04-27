@@ -4,9 +4,7 @@
   <meta charset="utf-8">
   <title>基于几何先验的3D gaussian splatting模型优化</title>
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  <script src="static/js/bulma-carousel.min.js"></script>
 </head>
 <body>
 
@@ -64,52 +62,29 @@
         <h2 class="title is-3">演示视频</h2>
         <div class="columns is-centered">
           <div class="column is-four-fifths">
-            <div class="carousel">
-              <div class="carousel-container">
-                <!-- 视频1 -->
-                <div class="carousel-item">
-                  <video poster="" autoplay controls muted loop height="100%">
-                    <source src="static/videos/1.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <!-- 视频2 -->
-                <div class="carousel-item">
-                  <video poster="" autoplay controls muted loop height="100%">
-                    <source src="static/videos/2.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <!-- 视频3 -->
-                <div class="carousel-item">
-                  <video poster="" autoplay controls muted loop height="100%">
-                    <source src="static/videos/3.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </div>
-              <!-- 导航按钮 -->
-              <div class="carousel-nav">
-                <button class="carousel-nav-prev">←</button>
-                <button class="carousel-nav-next">→</button>
-              </div>
+            <!-- 视频1 -->
+            <div class="video-container">
+              <video poster="" autoplay controls muted loop height="100%">
+                <source src="static/videos/1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <!-- 视频2 -->
+            <div class="video-container">
+              <video poster="" autoplay controls muted loop height="100%">
+                <source src="static/videos/2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <!-- 视频3 -->
+            <div class="video-container">
+              <video poster="" autoplay controls muted loop height="100%">
+                <source src="static/videos/3.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      bulmaCarousel.attach('.carousel', {
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        infinite: true,
-        pagination: true,
-        navigation: true
-      });
-    });
-  </script>
 
 </body>
 </html>
