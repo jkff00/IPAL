@@ -30,9 +30,9 @@
           <div class="content has-text-justified">
             <p>
               在这里介绍：
-              - 项目背景
-              - 主要功能
-              - 技术特点
+              - 项目背景:移动测量设备携带的RGB影像和激光雷达数据,通过多传感器SLAM技术进行点云模特的场景重建,3D GS模型利用可微渲染技术将其渲染为逼真图像。
+              - 主要功能:将移动测量设备数据接入3D GS的训练管道并提供先验约束帮助点云到图像模态的转换。
+              - 技术特点:1. 利用多尺度图像损失在保持低显存的情况下融入高分辨率纹理;2. 结合激光雷达的几何先验降低对密集图像的需求,提高模型在场景级别的渲染可行性和视角一致性; 3. 利用多传感器融合SLAM技术,提高大规模数据采集的成功率。
             </p>
           </div>
         </div>
@@ -44,10 +44,10 @@
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3">框架图</h2>
+        <h2 class="title is-3">框架</h2>
         <div class="columns is-centered">
           <div class="column is-four-fifths">
-            <img src="static/images/framework.png" alt="框架图"/>
+            <img src="static/videos/demo.mp4" alt="框架"/>
           </div>
         </div>
       </div>
@@ -61,9 +61,33 @@
         <h2 class="title is-3">演示视频</h2>
         <div class="columns is-centered">
           <div class="column is-four-fifths">
-            <video poster="" id="demo" autoplay controls muted loop height="100%">
-              <source src="static/videos/demo.mp4" type="video/mp4">
-            </video>
+            <div class="carousel">
+              <div class="carousel-container">
+                <!-- 视频1 -->
+                <div class="carousel-item">
+                  <video poster="" autoplay controls muted loop height="100%">
+                    <source src="static/videos/1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <!-- 视频2 -->
+                <div class="carousel-item">
+                  <video poster="" autoplay controls muted loop height="100%">
+                    <source src="static/videos/2.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <!-- 视频3 -->
+                <div class="carousel-item">
+                  <video poster="" autoplay controls muted loop height="100%">
+                    <source src="static/videos/3.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <!-- 导航按钮 -->
+              <div class="carousel-nav">
+                <button class="carousel-nav-prev">←</button>
+                <button class="carousel-nav-next">→</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
